@@ -47,6 +47,31 @@ const projects: Entry[] = [
       "Integrated ESCs, servos, and a camera into a responsive control architecture.",
     ],
   },
+  {
+    title: "Cancer Regression Model",
+    meta: "Machine learning project",
+    tech: ["Python", "pandas", "scikit-learn", "Logistic Regression", "KNN", "SVM", "Naive Bayes"],
+    bullets: [
+      "Developed supervised machine learning models on a structured breast cancer dataset to classify malignant vs. benign tumors using clinical features (e.g., radius, texture, concavity).",
+      "Engineered target labels via binary encoding (M = 1, B = 0) and performed feature selection on key diagnostic variables.",
+      "Built end-to-end preprocessing pipelines using scikit-learn Pipeline, including mean imputation (SimpleImputer) and feature scaling (StandardScaler).",
+      "Trained and evaluated multiple models including Logistic Regression (with L2 regularization), K-Nearest Neighbors (KNN), Support Vector Machine (SVC), and Gaussian Naive Bayes.",
+      "Applied k-fold cross-validation (5-fold and 10-fold) to assess model generalization; analyzed mean accuracy and standard deviation across folds.",
+      "Evaluated classification performance using precision, recall, confusion matrix, ROC curve, and AUC metrics.",
+    ],
+  },
+  {
+    title: "Medication Adverse Effects RAG Chatbot",
+    meta: "Independent project",
+    tech: ["Python", "LLM", "Vector database", "RAG", "Embeddings"],
+    bullets: [
+      "Built a retrieval-augmented generation (RAG) pipeline that ingests FDA medication data, extracting drug names and adverse effects, then surfaces relevant information through a conversational chatbot interface.",
+      "Integrated FDA data sources and implemented a vector embedding and retrieval system to match user queries against medication information, enabling accurate, source-grounded responses.",
+      "Designed a multi-stage pipeline combining data ingestion, embeddings generation, vector storage, and LLM-based response generation to balance retrieval accuracy with conversational quality.",
+      "Implemented prompt engineering and context injection to ensure the chatbot grounds responses in actual FDA data rather than hallucinating, maintaining factual accuracy for medication safety information.",
+      "Deployed an end-to-end system that retrieves relevant adverse effects for queried medications and generates concise, user-friendly explanations, demonstrating practical RAG architecture for real-world healthcare applications.",
+    ],
+  },
 ];
 
 const experience: Entry[] = [
